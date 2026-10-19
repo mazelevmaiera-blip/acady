@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { ActivityId, ActivityInfo, Language } from '../types';
 import { ACTIVITIES_DATA } from '../data/content';
 import { Bot, Mic, Crown, Calculator, Palette, Brain, Shield, Users, Wrench, Sparkles, BookOpen, Lightbulb, CheckCircle2 } from 'lucide-react';
+import dragonMascotImg from '../assets/images/agora_dragon_mascot_1792345713647.jpg';
+import kidRoboticsImg from '../assets/images/kid_robotics_assembly_1792345715612.jpg';
+import kidsCollabImg from '../assets/images/kids_collaborative_tech_1792345716077.jpg';
 
 interface ActivitiesSectionProps {
   language: Language;
@@ -142,7 +145,7 @@ export const ActivitiesSection: React.FC<ActivitiesSectionProps> = ({
               {/* Main Photo */}
               <div className="md:col-span-8 rounded-2xl overflow-hidden border-2 border-slate-900 shadow-[4px_4px_0px_#0f172a] relative aspect-video bg-slate-100 group">
                 <img
-                  src="/src/assets/images/kid_robotics_assembly_1792345715612.jpg"
+                  src={kidRoboticsImg}
                   alt="Child wiring and assembling robotics project at Agora Junior Academy"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                   referrerPolicy="no-referrer"
@@ -156,7 +159,7 @@ export const ActivitiesSection: React.FC<ActivitiesSectionProps> = ({
               {/* Secondary Photo */}
               <div className="md:col-span-4 rounded-2xl overflow-hidden border-2 border-slate-900 shadow-[4px_4px_0px_#0f172a] relative aspect-video md:aspect-auto bg-slate-100 group">
                 <img
-                  src="/src/assets/images/kids_collaborative_tech_1792345716077.jpg"
+                  src={kidsCollabImg}
                   alt="Children collaborating on code and robotics design"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                   referrerPolicy="no-referrer"
@@ -332,7 +335,7 @@ export const ActivitiesSection: React.FC<ActivitiesSectionProps> = ({
             <div className="p-4 sm:p-5 rounded-2xl bg-[#F6CF56] border-2 border-slate-900 shadow-[4px_4px_0px_#0f172a] flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-white border-2 border-slate-900 flex items-center justify-center shrink-0 overflow-hidden shadow-sm">
                 <img
-                  src="/src/assets/images/agora_dragon_mascot_1792345713647.jpg"
+                  src={dragonMascotImg}
                   alt="Drako mascot advice"
                   className="w-full h-full object-cover"
                 />

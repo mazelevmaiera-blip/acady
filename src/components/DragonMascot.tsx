@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ActivityId, Language } from '../types';
 import { Bot, Mic, Crown, Calculator, Palette, Sparkles, MessageCircle } from 'lucide-react';
+import dragonMascotImg from '../assets/images/agora_dragon_mascot_1792345713647.jpg';
 
 interface DragonMascotProps {
   language: Language;
@@ -123,7 +124,7 @@ export const DragonMascot: React.FC<DragonMascotProps> = ({
         title={language === 'FR' ? "Touchez-moi pour discuter !" : "Tap me to talk!"}
       >
         <img
-          src="/src/assets/images/agora_dragon_mascot_1792345713647.jpg"
+          src={dragonMascotImg}
           alt="Agora Junior Dragon Mascot"
           className="w-full h-full object-contain filter drop-shadow-md group-hover:brightness-105 transition-all"
         />

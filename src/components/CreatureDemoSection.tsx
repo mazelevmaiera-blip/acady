@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Language } from '../types';
 import { CREATURE_STAGES } from '../data/content';
 import { Calendar, Target, MessageSquare, Video, RotateCcw, Sparkles } from 'lucide-react';
+import dragonMascotImg from '../assets/images/agora_dragon_mascot_1792345713647.jpg';
 
 interface CreatureDemoSectionProps {
   language: Language;
@@ -103,7 +104,7 @@ export const CreatureDemoSection: React.FC<CreatureDemoSectionProps> = ({ langua
               <div className="relative flex flex-col items-center animate-pulse">
                 <div className="w-28 h-28 rounded-full bg-emerald-100 border-3 border-slate-900 p-2 shadow-md">
                   <img
-                    src="/src/assets/images/agora_dragon_mascot_1792345713647.jpg"
+                    src={dragonMascotImg}
                     alt="Baby dragon mascot"
                     className="w-full h-full object-contain"
                   />
@@ -117,7 +118,7 @@ export const CreatureDemoSection: React.FC<CreatureDemoSectionProps> = ({ langua
               <div className="relative flex flex-col items-center">
                 <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-gradient-to-b from-amber-100 to-emerald-100 border-3 border-slate-900 p-2 shadow-lg">
                   <img
-                    src="/src/assets/images/agora_dragon_mascot_1792345713647.jpg"
+                    src={dragonMascotImg}
                     alt="Evolving dragon mascot"
                     className="w-full h-full object-contain"
                   />
