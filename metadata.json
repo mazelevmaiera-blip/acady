@@ -1,0 +1,6 @@
+{
+  "name": "Agora Junior Academy",
+  "description": "Une académie d'excellence à Kénitra (7-16 ans) : robotique, scène & anglais, échecs, calcul mental et arts créatifs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
